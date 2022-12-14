@@ -27,5 +27,10 @@ class Main:
 from Cliente import Cliente
 
 c1 = Cliente("João","1197958424")
+
 print(c1)
 print("Nome: ", c1.nome, " | Telefone: " , c1.telefone)
+
+conta1 = Conta(c1.nome,6565,0)
+
+print(conta1.titular, "Número: ", conta1.numero, "Saldo: ", conta1.saldo)
