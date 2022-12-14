@@ -28,12 +28,12 @@ from Cliente import Cliente
 
 c1 = Cliente("João","1197958424")
 
-print(c1)
-print("Nome: ", c1.nome, " | Telefone: " , c1.telefone)
+print("\nCadastrando cliente...\n",c1)
+print("Nome: ", c1.nome, "\nTelefone: " , c1.telefone)
 
 from Conta import Conta
 
 conta1 = Conta(c1.nome,6565,0)
 
-print("")
-print("Titular: ", conta1.titular, "\nNúmero: ", conta1.numero, "\nSaldo: ", conta1.saldo)
+
+print("\nTitular: ", conta1.titular, "\nNúmero: ", conta1.numero, "\nSaldo: ", conta1.saldo)
