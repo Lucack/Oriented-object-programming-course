@@ -42,8 +42,10 @@ print("\nTitular: ", conta1._titular, "\nNúmero: ", conta1._numero, "\nSaldo: R
 print("\nTitular: ", conta2._titular, "\nNúmero: ", conta2._numero, "\nSaldo: R$", conta2._saldo)
 
 print("")
-conta=Conta(c1.get_nome(),1222,0)
+conta=Conta(c1.get_nome(),conta1._numero,0)
 
+
+conta.extrato()
 conta.deposita(100)
 conta.extrato()
 conta.saque(50)
