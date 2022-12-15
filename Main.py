@@ -30,15 +30,15 @@ c1 = Cliente("João","1197958424")
 c2 = Cliente("Luan César Carvalho","98154-1343")
 
 print("\nCadastrando cliente...\n",c1)
-print("Nome: ", c1.nome, "\nTelefone: " , c1.telefone)
+print("Nome: ", c1._nome, "\nTelefone: " , c1._telefone)
 
 from Conta import Conta
 
-conta1 = Conta(c1.nome,6565,0)
-conta2 = Conta(c2.nome,2732,9.47)
+conta1 = Conta(c1._nome,6565,0)
+conta2 = Conta(c2._nome,2732,9.47)
 
 
-print("\nTitular: ", conta1.titular, "\nNúmero: ", conta1.numero, "\nSaldo: R$", conta1.saldo)
+print("\nTitular: ", conta1._titular, "\nNúmero: ", conta1._numero, "\nSaldo: R$", conta1._saldo)
 
 
-print("\nTitular: ", conta2.titular, "\nNúmero: ", conta2.numero, "\nSaldo: R$", conta2.saldo)
+print("\nTitular: ", conta2._titular, "\nNúmero: ", conta2._numero, "\nSaldo: R$", conta2._saldo)
